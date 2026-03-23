@@ -1,3 +1,5 @@
+/* Hero section */
+
 *{
     margin: 0;
     padding: 0;
@@ -17,13 +19,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 290px;
+    padding: 16px 150px;
     height: 60px;
 }
 
 .navbar a{
     text-decoration: none;
     color: white;
+    font-size: 17px;
 }
 
 .navbar_menu_container{
@@ -61,6 +64,14 @@
     width: 50%;
     border-radius: 10px;
     flex-direction: row;
+}
+
+.hero_section_input_container .location{
+    font-size: 20px;
+}
+
+.hero_section_input_container .search{
+    font-size: 15px;
 }
 
 .input_container_location,
@@ -129,4 +140,55 @@
         font-size: 20px;
         width: 80%;
     }
+
+    .hero_section_input_container .location, .hero_section_input_container .search{
+        display: none;
+    }
+}
+
+/* Completed Hero section */
+
+
+/* Offer section */
+.container{
+    margin: 3rem auto; 
+    width: 80%;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.we_offer .card{
+    border-radius: 10px;
+    border: solid 1px #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.we_offer .card:hover{
+    transform: scale(1.05);
+}
+
+.we_offer .card img{
+    width: 240px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2{
+    padding: 0 10px;
+    font-size: 15px; 
+    font-weight: 400;
+}
+
+.we_offer .card p{
+    font-size: 10px;
+    padding: 0 10px 10px 10px;
 }
